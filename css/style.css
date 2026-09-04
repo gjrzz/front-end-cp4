@@ -1,4 +1,28 @@
-:root{
+:root {
+    --fonte-principal: sans-serif; /* ja q o google fonts n ta funcionando :P*/
+    --cor-preto: #121212;
+    --cor-offwhite: #fff3ef;
+    --cor-botao: #b4aaa3;
+    --cor-botao-hover: #9e938c;
+    --gap: 20px;
+}
 
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-preto);
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
