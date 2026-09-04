@@ -1,4 +1,123 @@
-:root{
+:root {
+    --fonte-principal: sans-serif; /* ja q o google fonts n ta funcionando :P*/
+    --cor-preto: #121212;
+    --cor-offwhite: #fff3ef;
+    --cor-botao: #b4aaa3;
+    --cor-botao-hover: #9e938c;
+    --gap: 20px;
+}
 
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-preto);
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.secao-hero {
+    background-color: var(--cor-preto);
+    padding: 70px 20px;
+    width: 100%;
+}
+
+.container-hero {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "banner texto"
+        "galeria galeria";
+}
+
+.area-banner {
+    grid-area: banner;
+    aspect-ratio: 16 / 10;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.area-texto {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.area-texto h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.area-texto p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.btn {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: var(--cor-botao);
+    color: var(--cor-preto);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--cor-botao-hover);
+    color: #ffffff;
+}
+
+.area-galeria-mini {
+    grid-area: galeria;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.area-galeria-mini img {
+    aspect-ratio: 16 / 9;
+    border-radius: 6px;
+}
+
+.secao-galeria {
+    width: 100%;
+    background-color: var(--cor-offwhite);
+    padding: 60px 40px;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+    gap: var(--gap);
+}
+
+.card-foto {
+    overflow: hidden;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-foto img {
+    transition: transform 0.3s ease;
 }
