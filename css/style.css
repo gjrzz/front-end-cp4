@@ -164,3 +164,22 @@ img {
         display: none;
     }
 }
+
+
+@media (max-width: 1024px) {
+
+    .secao-hero,
+    .secao-galeria {
+        padding: 40px 24px;
+    }
+
+    .area-texto h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
+    .grid-galeria {
+        grid-template-rows: 130px 130px;
+    }
+}
