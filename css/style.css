@@ -70,3 +70,31 @@ img {
     color: #cccccc;
 }
 
+.btn {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: var(--cor-botao);
+    color: var(--cor-preto);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--cor-botao-hover);
+    color: #ffffff;
+}
+
+.area-galeria-mini {
+    grid-area: galeria;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.area-galeria-mini img {
+    aspect-ratio: 16 / 9;
+    border-radius: 6px;
+}
