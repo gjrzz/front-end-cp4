@@ -38,15 +38,15 @@ img {
     margin: 0 auto;
     display: grid;
     gap: var(--gap);
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2.2fr;
     grid-template-areas:
-        "banner texto"
-        "galeria galeria";
+        "banner banner"
+        "texto galeria";
 }
 
 .area-banner {
     grid-area: banner;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 21 / 8;
     border-radius: 8px;
     overflow: hidden;
 }
