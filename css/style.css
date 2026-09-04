@@ -26,3 +26,47 @@ img {
     width: 100%;
     height: 100%;
 }
+
+.secao-hero {
+    background-color: var(--cor-preto);
+    padding: 70px 20px;
+    width: 100%;
+}
+
+.container-hero {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "banner texto"
+        "galeria galeria";
+}
+
+.area-banner {
+    grid-area: banner;
+    aspect-ratio: 16 / 10;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.area-texto {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.area-texto h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.area-texto p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
